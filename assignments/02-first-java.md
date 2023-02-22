@@ -13,5 +13,31 @@ find Simple Interest.
 6. Input currency in rupees and output in USD.
 7. To calculate Fibonacci Series up to n numbers.
 8. To find out whether the given String is Palindrome or not.
-9. To find Armstrong Number between two given number.
+program:
+class Solution {
+    public boolean isPalindrome(int x) {
+        int rem,sum=0,check;
+        if(x<0)
+        {
+            return false;
+        }
+        check=x;
+       while(x!=0)
+       {
+           rem=x%10;
+           sum=sum*10+rem;
+           x/=10;
+       } 
+       if(sum==check)
+       {
+        return true;
+       }
+       
+       else
+       {
+           return false;
+       }
+    }
+}
+10. To find Armstrong Number between two given number.
 
